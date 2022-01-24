@@ -24,6 +24,13 @@
   .header_area .navbar .nav .nav-item {
 		margin-right: 28px;
 	}
+
+  .banner-bitmoji{
+    width:100%;
+    position: relative;
+    top: 95px;
+  }
+
 	/* End Main Menu Area css
 	============================================================================================ */
 	/* Home Banner Area css
@@ -143,6 +150,33 @@
 	.header_area.white_menu .navbar .nav .nav-item .nav-link {
 		color: #222;
 	}
+
+  .headshot{
+    width:100%;
+    position: relative;
+    top: -50px;
+    left: 0;
+  }
+
+  .about_head{
+    position: relative;
+    left: 0;
+  }
+
+  .banner-bitmoji{
+    width:100%;
+    position: relative;
+    top: 0;
+  }
+
+  .skill-container{
+    margin-top: 0px;
+    padding-top: 10px;
+
+  }
+  .tools_expert{
+    margin-top: 0;
+  }
 	/* End Main Menu Area css
 	============================================================================================ */
 	/* Blog page Area css
@@ -200,9 +234,7 @@
 	.home_banner_area .banner_inner .banner_content {
 		padding-top: 0px;
 	}
-	.tools_expert {
-		margin-top: 50px;
-	}
+
 	.latest_blog_inner{
 		margin-bottom: -30px;
 	}
@@ -214,7 +246,12 @@
 		padding-left: 0px;
 	}
 }
-@media (max-width:767px){
+@media (max-width:769px){
+  .box_1620 {
+    height:180px;
+    margin: auto; } }
+
+@media (max-width:768px){
 	.home_banner_area {
 		min-height: 500px;
 	}
@@ -227,6 +264,20 @@
 	.home_banner_area .banner_inner .banner_content {
 		margin-top: 0px;
 	}
+
+  .home_banner_area .banner_inner .home_left_img {
+    margin-top: 50px;
+  }
+
+  .headshot{
+    top: 20px;
+    width:70%;
+    margin-bottom:40px;
+  }
+
+  .projects_item .projects_text h4 {
+    font-size: 15px;
+ }
 	/* Blog Page Area css
 	============================================================================================ */
     .blog_banner .banner_inner .blog_b_text h2 {
@@ -289,6 +340,12 @@
 	.header_area + section, .header_area + row, .header_area + div {
 		/* margin-top: 71px; */
 	}
+
+  .banner-bitmoji{
+    width:100%;
+    position: relative;
+    top: 35px;
+  }
     /* Home Banner Area css
 	============================================================================================ */
 	.home_banner_area .banner_inner .banner_content h2 {

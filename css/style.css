@@ -114,7 +114,7 @@ button:focus {
 ============================================================================================ */
 .main_title {
   text-align: center;
-  margin-bottom: 75px; }
+  margin-bottom: 0; }
   .main_title h2 {
     font-family: 'Montserrat', sans-serif;
     font-size: 4rem;
@@ -149,7 +149,7 @@ button:focus {
   transition: background 0.4s, all 0.3s linear;
 }
   .header_area .navbar {
-    background: transparent;
+    background: #FFFFFF99;
     padding: 0px;
     border: 0px;
     border-radius: 0px; }
@@ -158,6 +158,8 @@ button:focus {
       .header_area .navbar .nav .nav-item .nav-link {
         font: 500 12px/100px "Roboto", sans-serif;
         text-transform: uppercase;
+        font-weight:400;
+        font-size:0.8rem;
         color: #06082C;
         padding: 0px;
         display: inline-block; }
@@ -273,7 +275,8 @@ button:focus {
     color: #06082C; }
 
 .logo-img{
-  width:100%
+  width:100%;
+  filter: brightness(0.9) invert(0.1) sepia(1) hue-rotate(180deg) saturate(300%);
 }
 
 .top_menu {
@@ -307,7 +310,8 @@ button:focus {
 ============================================================================================ */
 .home_banner_area {
   z-index: 1;
-  background: url(../img/banner/home-banner.svg) no-repeat scroll center center;
+  background: url(../img/banner/banner.jpg) no-repeat scroll top center;
+  background-position: 50% 0%;
   background-size: cover; }
   .home_banner_area .banner_inner {
     width: 100%; }
@@ -318,7 +322,8 @@ button:focus {
       align-self: center; }
     .home_banner_area .banner_inner .banner_content {
       text-align: left;
-      color: #06082C; }
+      color: #06082C;
+      text-shadow: 0px 0px 10px #E1D89F, 0px 0px 10px #E1D89F, 0px 0px 10px #E1D89F, 0px 0px 10px #E1D89F, 0px 0px 10px #E1D89F}
       .home_banner_area .banner_inner .banner_content h5 {
         font-size: 1.5rem;
         font-family: 'Work Sans', sans-serif;
@@ -336,6 +341,7 @@ button:focus {
       .home_banner_area .banner_inner .banner_content p {
         color: #777777;
         font-family: 'Work Sans', sans-serif;
+        font-weight:500;
         max-width: 680px;
         font-size: 1.5rem;
         line-height: 26px;
@@ -345,11 +351,13 @@ button:focus {
 
 .banner-bitmoji{
   width:100%;
+  position: relative;
+  top: 29px;
 }
 
 .banner_content{
   margin: 50% 0 20% 0;
-  background: #E1D89F55;
+  /* background: #E1D89F55; */
   padding:20px;
   border-radius: 15px;
 }
@@ -362,7 +370,7 @@ button:focus {
 }
 .home_banner_area .banner_inner .banner_content{
   color:#06082C;
-  box-shadow: 0px 0px 20px #E1D89F99;
+  /* box-shadow: 0px 0px 20px #E1D89F99; */
 }
 
 .banner_box {
@@ -417,14 +425,14 @@ button:focus {
 /*  Banner on project pages */
 .banner_area::before{
     content: "";
-    background-image: url(../img/banner/home-banner.svg);
+    background-image: url(../img/banner/banner-thin.jpg);
     background-size: cover;
     position: absolute;
     top: 0px;
     right: 0px;
     bottom: 0px;
     left: 0px;
-    opacity: 0.5;
+    opacity: 0.8;
 }
 
 .banner_area {
@@ -2813,7 +2821,7 @@ h6 {
 
 .tools_expert {
   box-shadow: 0px 8px 30px 0px rgba(153, 153, 153, 0.1);
-  padding: 50px 35px; }
+  padding: 20px 20px; }
   .tools_expert h3 {
     color: #06082C;
     font-size: 21px;
@@ -2848,12 +2856,29 @@ h6 {
         background-image: -webkit-linear-gradient(0deg, #D89216 0%, #374045 100%);
         background-image: -ms-linear-gradient(0deg, #D89216 0%, #374045 100%); }
 
+.skill-container{
+  margin-top: 10px;
+  padding-top:20px;
+}
+
 .welcome_section{
   margin: 30px 0;
 }
 
 .skill_section{
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+.headshot{
+  width:100%;
+  position: relative;
+  top: -50px;
+  left: -20px;
+}
+
+.about_head{
+  position: relative;
+  left: 100px;
 }
 
 /* End Welcome Area css
